@@ -577,7 +577,7 @@ F 4 "mfr_pn" H 2625 2925 60  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 2350 7200 1500 400 
+S 2350 7275 1500 400 
 U 5A47432D
 F0 "mechanical" 40
 F1 "mechanical.sch" 40
@@ -605,7 +605,7 @@ SDA
 Text Label 2050 5650 0    40   ~ 0
 SCL
 $Sheet
-S 2350 3900 1500 975 
+S 2350 3825 1500 1050
 U 5A452227
 F0 "esp_pwr_uart" 40
 F1 "esp_pwr_uart.sch" 40
@@ -619,7 +619,8 @@ F8 "IO13" O L 2350 4575 40
 F9 "TXD0" O L 2350 4650 40 
 F10 "RXD0" O L 2350 4725 40 
 F11 "DTR" O L 2350 4800 40 
-F12 "24V" O L 2350 3975 40 
+F12 "24V" O L 2350 3900 40 
+F13 "GNDPWR" O L 2350 3975 40 
 $EndSheet
 Wire Wire Line
 	2050 4050 2350 4050
@@ -909,12 +910,12 @@ Native SPI pins are (clk, mosi, miso, cs):\nSPI1: 6, 8, 7, 11\nHSPI: 14,13,12,15
 $Comp
 L AA_vayuO2_symbols:Conn_02x03_Odd_Even CN6
 U 1 1 5A590BB3
-P 9775 2725
-F 0 "CN6" H 9825 3000 50  0000 C CNN
-F 1 "SPI" H 9825 2925 50  0000 C CNN
-F 2 "AA_vayu:Header_ISP" H 9775 2725 50  0001 C CNN
-F 3 "~" H 9775 2725 50  0001 C CNN
-	1    9775 2725
+P 9825 2725
+F 0 "CN6" H 9875 3000 50  0000 C CNN
+F 1 "SPI" H 9875 2925 50  0000 C CNN
+F 2 "AA_vayu:Header_ISP" H 9825 2725 50  0001 C CNN
+F 3 "~" H 9825 2725 50  0001 C CNN
+	1    9825 2725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1256,17 +1257,18 @@ Wire Wire Line
 Text Notes 5075 3875 0    40   ~ 0
 Requires Level Translation
 $Sheet
-S 2350 6125 1500 675 
+S 2350 6125 1500 750 
 U 6178DB6E
 F0 "mosfets" 40
 F1 "mosfets.sch" 40
 F2 "24V" I L 2350 6200 40 
 F3 "GND" I L 2350 6275 40 
-F4 "OUT1" I L 2350 6425 40 
-F5 "OUT2" I L 2350 6500 40 
-F6 "OUT3" I L 2350 6575 40 
-F7 "OUT4" I L 2350 6650 40 
-F8 "OUT5" I L 2350 6725 40 
+F4 "OUT1" I L 2350 6500 40 
+F5 "OUT2" I L 2350 6575 40 
+F6 "OUT3" I L 2350 6650 40 
+F7 "OUT4" I L 2350 6725 40 
+F8 "OUT5" I L 2350 6800 40 
+F9 "GNDPWR" I L 2350 6350 40 
 $EndSheet
 Text Notes 1325 1950 0    40   ~ 0
 UART1
@@ -1427,13 +1429,11 @@ Wire Wire Line
 Text Label 2050 6275 0    40   ~ 0
 GND
 Wire Wire Line
-	2050 3975 2350 3975
-Text Label 2050 3975 0    40   ~ 0
+	2050 3900 2350 3900
+Text Label 2050 3900 0    40   ~ 0
 24V
 Wire Wire Line
 	2050 6200 2350 6200
-Wire Wire Line
-	2050 6425 2350 6425
 Wire Wire Line
 	2050 6500 2350 6500
 Wire Wire Line
@@ -1442,17 +1442,19 @@ Wire Wire Line
 	2050 6650 2350 6650
 Wire Wire Line
 	2050 6725 2350 6725
+Wire Wire Line
+	2050 6800 2350 6800
 Text Label 2050 6200 0    40   ~ 0
 24V
-Text Label 2050 6575 0    40   ~ 0
-OUT3
 Text Label 2050 6650 0    40   ~ 0
-OUT4
+OUT3
 Text Label 2050 6725 0    40   ~ 0
+OUT4
+Text Label 2050 6800 0    40   ~ 0
 OUT5
-Text Label 2050 6425 0    40   ~ 0
-OUT1
 Text Label 2050 6500 0    40   ~ 0
+OUT1
+Text Label 2050 6575 0    40   ~ 0
 OUT2
 $Comp
 L AA_vayuO2_symbols:MOSFET-N Q8
@@ -2013,4 +2015,12 @@ F 3 "" H 9775 1175 50  0001 C CNN
 	1    9775 1175
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2350 3975 2050 3975
+Text Label 2050 3975 0    40   ~ 0
+GNDPWR
+Wire Wire Line
+	2050 6350 2350 6350
+Text Label 2050 6350 0    40   ~ 0
+GNDPWR
 $EndSCHEMATC

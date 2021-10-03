@@ -925,6 +925,8 @@ $Comp
 L AA_vayuO2_symbols:DC_DC_buck U3
 U 1 1 6173F60B
 P 2450 950
+AR Path="/6173F60B" Ref="U3"  Part="1" 
+AR Path="/5A452227/6173F60B" Ref="U3"  Part="1" 
 F 0 "U3" H 2175 1100 40  0000 C CNN
 F 1 "B2405S-2WR2" H 2550 1100 40  0000 C CNN
 F 2 "AA_vayu:DC_DC_conv_2W" H 2450 1150 50  0001 C CNN
@@ -991,12 +993,12 @@ F 3 "" H 1425 900 50  0001 C CNN
 	1    1425 900 
 	1    0    0    -1  
 $EndComp
-Text Label 1250 900  0    40   ~ 0
+Text Label 1250 900  2    40   ~ 0
 24V
 Text Label 3225 900  0    40   ~ 0
 5V
-Text Label 1250 1450 0    40   ~ 0
-GND
+Text Label 1250 1450 2    40   ~ 0
+GNDPWR
 Text Notes 1225 2100 0    40   ~ 0
 Mornsun B2405S-2WR2 is 2W, 5V, 400mA\ncould be borderline requirement for ESP32\nTry selecting a slightly higher rated device.\n\nU6 footprint is for regular buck converter
 Text HLabel 900  650  0    40   Output ~ 0
@@ -1060,6 +1062,8 @@ $Comp
 L AA_vayuO2_symbols:DC_DC_buck U6
 U 1 1 617133F7
 P 2450 1400
+AR Path="/617133F7" Ref="U6"  Part="1" 
+AR Path="/5A452227/617133F7" Ref="U6"  Part="1" 
 F 0 "U6" H 2175 1550 40  0000 C CNN
 F 1 "24V_BUCK" H 2550 1550 40  0000 C CNN
 F 2 "AA_vayu:DC_DC_buck_LM2596" H 2450 1600 50  0001 C CNN
@@ -1087,4 +1091,20 @@ Wire Wire Line
 Connection ~ 3025 900 
 Wire Wire Line
 	3025 900  3300 900 
+Wire Wire Line
+	1250 1450 900  1450
+Connection ~ 1250 1450
+Text HLabel 900  1450 0    40   Output ~ 0
+GNDPWR
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 616FD3E1
+P 1425 1450
+F 0 "#FLG0102" H 1425 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 1425 1650 50  0001 C CNN
+F 2 "" H 1425 1450 50  0001 C CNN
+F 3 "~" H 1425 1450 50  0001 C CNN
+	1    1425 1450
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
