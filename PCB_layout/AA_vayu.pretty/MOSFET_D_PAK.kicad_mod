@@ -1,4 +1,4 @@
-(module MOSFET_D_PAK (layer F.Cu) (tedit 61589771)
+(module MOSFET_D_PAK (layer F.Cu) (tedit 6159955E)
   (attr smd)
   (fp_text reference Q1 (at -3.81 4.318 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
@@ -53,7 +53,7 @@
   (pad 3 smd rect (at 2.286 5.1435) (size 0.9398 2.4892) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -2.286 5.1435) (size 0.9398 2.4892) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at 0 5.1435) (size 0.9398 2.4892) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/3D_models/TO_252_2.wrl
+  (model ${KIPRJMOD}/3d_modules/TO_252_3_MOSFET.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

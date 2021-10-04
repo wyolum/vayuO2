@@ -569,8 +569,8 @@ L AA_vayuO2_symbols:ESP-wroom-32 U1
 U 1 1 5A41BC22
 P 2625 2925
 F 0 "U1" H 2625 4525 60  0000 C CNB
-F 1 "ESP-wroom-32" H 2625 4675 60  0000 C CNB
-F 2 "AA_vayu:ESP_wroom_32" H 2625 2925 60  0001 C CNN
+F 1 "ESP32-WROOM-32UC" H 2625 4675 60  0000 C CNB
+F 2 "AA_vayu:ESP_wroom_32_ext_ant" H 2625 2925 60  0001 C CNN
 F 3 "" H 2625 2925 60  0001 C CNN
 F 4 "mfr_pn" H 2625 2925 60  0001 C CNN "manf#"
 	1    2625 2925
@@ -581,6 +581,8 @@ S 2350 7275 1500 400
 U 5A47432D
 F0 "mechanical" 40
 F1 "mechanical.sch" 40
+F2 "5V" I L 2350 7425 40 
+F3 "GND" I L 2350 7525 40 
 $EndSheet
 $Sheet
 S 2350 5275 1500 450 
@@ -908,10 +910,10 @@ Text Label 2050 5425 0    40   ~ 0
 Text Notes 8950 3825 0    40   ~ 0
 Native SPI pins are (clk, mosi, miso, cs):\nSPI1: 6, 8, 7, 11\nHSPI: 14,13,12,15\nVSPI: 18,23,19, 5\nIf using native pins max SPI clock can be set to 80 MHZ.\nOnly HSPI & VSPI are supported by esp-idf driver.
 $Comp
-L AA_vayuO2_symbols:Conn_02x03_Odd_Even CN6
+L AA_vayuO2_symbols:Conn_02x03_Odd_Even #CN6
 U 1 1 5A590BB3
 P 9825 2725
-F 0 "CN6" H 9875 3000 50  0000 C CNN
+F 0 "#CN6" H 9875 3000 50  0000 C CNN
 F 1 "SPI" H 9875 2925 50  0000 C CNN
 F 2 "AA_vayu:Header_ISP" H 9825 2725 50  0001 C CNN
 F 3 "~" H 9825 2725 50  0001 C CNN
@@ -942,15 +944,15 @@ Text Label 9275 2725 0    40   ~ 0
 SCK
 Text Label 9275 2825 0    40   ~ 0
 RST
-Text Label 1775 2625 2    40   ~ 0
+Text Label 1775 2425 2    40   ~ 0
 OUT4
-Text Label 1775 2725 2    40   ~ 0
+Text Label 1775 2325 2    40   ~ 0
 OUT5
 $Comp
-L AA_vayuO2_symbols:Conn_01x01 J1
+L AA_vayuO2_symbols:Conn_01x01 #J1
 U 1 1 5A6285C8
 P 9075 2625
-F 0 "J1" H 8975 2475 50  0001 C CNN
+F 0 "#J1" H 8975 2475 50  0001 C CNN
 F 1 "MISO" H 8975 2475 50  0001 C CNN
 F 2 "AA_vayu:BreakOutPad" H 9075 2625 50  0001 C CNN
 F 3 "~" H 9075 2625 50  0001 C CNN
@@ -958,10 +960,10 @@ F 3 "~" H 9075 2625 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L AA_vayuO2_symbols:Conn_01x01 J3
+L AA_vayuO2_symbols:Conn_01x01 #J3
 U 1 1 5A63BBF7
 P 9075 2725
-F 0 "J3" H 8975 2575 50  0001 C CNN
+F 0 "#J3" H 8975 2575 50  0001 C CNN
 F 1 "SCK" H 8975 2575 50  0001 C CNN
 F 2 "AA_vayu:BreakOutPad" H 9075 2725 50  0001 C CNN
 F 3 "~" H 9075 2725 50  0001 C CNN
@@ -970,10 +972,10 @@ F 4 "mfr_pn" H 9075 2725 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L AA_vayuO2_symbols:Conn_01x01 J5
+L AA_vayuO2_symbols:Conn_01x01 #J5
 U 1 1 5A63BDD4
 P 9075 2825
-F 0 "J5" H 8975 2675 50  0001 C CNN
+F 0 "#J5" H 8975 2675 50  0001 C CNN
 F 1 "RST" H 8975 2675 50  0001 C CNN
 F 2 "AA_vayu:BreakOutPad" H 9075 2825 50  0001 C CNN
 F 3 "~" H 9075 2825 50  0001 C CNN
@@ -982,10 +984,10 @@ F 4 "mfr_pn" H 9075 2825 50  0001 C CNN "manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L AA_vayuO2_symbols:Conn_01x01 J6
+L AA_vayuO2_symbols:Conn_01x01 #J6
 U 1 1 5A63C3B0
 P 10575 2825
-F 0 "J6" H 10475 2675 50  0001 C CNN
+F 0 "#J6" H 10475 2675 50  0001 C CNN
 F 1 "GND" H 10475 2675 50  0001 C CNN
 F 2 "AA_vayu:BreakOutPad" H 10575 2825 50  0001 C CNN
 F 3 "~" H 10575 2825 50  0001 C CNN
@@ -994,10 +996,10 @@ F 4 "mfr_pn" H 10575 2825 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L AA_vayuO2_symbols:Conn_01x01 J4
+L AA_vayuO2_symbols:Conn_01x01 #J4
 U 1 1 5A63C933
 P 10575 2725
-F 0 "J4" H 10475 2575 50  0001 C CNN
+F 0 "#J4" H 10475 2575 50  0001 C CNN
 F 1 "MOSI" H 10475 2575 50  0001 C CNN
 F 2 "AA_vayu:BreakOutPad" H 10575 2725 50  0001 C CNN
 F 3 "~" H 10575 2725 50  0001 C CNN
@@ -1006,10 +1008,10 @@ F 4 "mfr_pn" H 10575 2725 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L AA_vayuO2_symbols:Conn_01x01 J2
+L AA_vayuO2_symbols:Conn_01x01 #J2
 U 1 1 5A63CDCD
 P 10575 2625
-F 0 "J2" H 10475 2475 50  0001 C CNN
+F 0 "#J2" H 10475 2475 50  0001 C CNN
 F 1 "3V3" H 10475 2475 50  0001 C CNN
 F 2 "AA_vayu:BreakOutPad" H 10575 2625 50  0001 C CNN
 F 3 "~" H 10575 2625 50  0001 C CNN
@@ -1018,7 +1020,7 @@ F 4 "mfr_pn" H 10575 2625 50  0001 C CNN "manf#"
 	1    0    0    -1  
 $EndComp
 Text Notes 8950 3375 0    40   ~ 0
-SPI header with breakout pins.\nIf required, Connect with wire \nto appropriate pins on ESP32
+NOTE : REMOVED since not required\n\nSPI header with breakout pins.\nIf required, Connect with wire \nto appropriate pins on ESP32
 Wire Notes Line
 	8925 675  10925 675 
 Wire Notes Line
@@ -1036,11 +1038,11 @@ Text Label 7025 3000 0    40   ~ 0
 Text Label 7025 3100 0    40   ~ 0
 GND
 $Comp
-L AA_vayuO2_symbols:Conn_01x04_MountingPin CN5
+L AA_vayuO2_symbols:Conn_01x04 CN5
 U 1 1 5A7E9B9A
 P 8525 3000
 F 0 "CN5" H 8475 3200 50  0000 L CNN
-F 1 "qwiic" V 8625 2750 50  0000 L CNN
+F 1 "I2C_2" V 8625 2750 50  0000 L CNN
 F 2 "AA_vayu:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 8525 3000 50  0001 C CNN
 F 3 "~" H 8525 3000 50  0001 C CNN
 	1    8525 3000
@@ -1081,10 +1083,10 @@ Wire Notes Line
 Text Notes 6750 2450 0    40   ~ 8
 I2C HEADERS
 $Comp
-L AA_vayuO2_symbols:C_NP C7
+L AA_vayuO2_symbols:C_NP #C7
 U 1 1 5A8D713D
 P 10775 2725
-F 0 "C7" H 10800 2875 40  0000 L CNN
+F 0 "#C7" H 10800 2875 40  0000 L CNN
 F 1 "100nF" V 10825 2400 40  0000 L CNN
 F 2 "AA_vayu:C_0603_1608Metric" H 10775 2725 60  0001 C CNN
 F 3 "" H 10775 2725 60  0000 C CNN
@@ -1161,9 +1163,9 @@ Wire Notes Line
 	4075 1925 3800 1925
 Text Label 9075 875  0    40   ~ 0
 3V3
-Text Label 1775 2325 2    40   ~ 0
+Text Label 1775 2725 2    40   ~ 0
 OUT1
-Text Label 1775 2425 2    40   ~ 0
+Text Label 1775 2625 2    40   ~ 0
 OUT2
 Wire Wire Line
 	6900 3000 7325 3000
@@ -1172,11 +1174,11 @@ Wire Wire Line
 Wire Wire Line
 	7325 2800 7025 2800
 $Comp
-L AA_vayuO2_symbols:Conn_01x04_MountingPin CN4
+L AA_vayuO2_symbols:Conn_01x04 CN4
 U 1 1 5A79A9A1
 P 7525 3000
 F 0 "CN4" H 7475 3200 50  0000 L CNN
-F 1 "qwiic" V 7625 2750 50  0000 L CNN
+F 1 "I2C_1" V 7625 2750 50  0000 L CNN
 F 2 "AA_vayu:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 7525 3000 50  0001 C CNN
 F 3 "~" H 7525 3000 50  0001 C CNN
 	1    7525 3000
@@ -1205,7 +1207,7 @@ Wire Notes Line
 Wire Notes Line
 	4525 6475 4525 2375
 Text Notes 4550 2450 0    40   ~ 8
-UART2 HEADER
+UART HEADERS
 $Comp
 L AA_vayuO2_symbols:C_NP C3
 U 1 1 616BA551
@@ -1244,14 +1246,6 @@ Wire Wire Line
 	8025 3100 8325 3100
 Wire Wire Line
 	7025 3100 7325 3100
-Text Label 7025 2600 0    40   ~ 0
-GND
-Wire Wire Line
-	7025 2600 7525 2600
-Text Label 8025 2600 0    40   ~ 0
-GND
-Wire Wire Line
-	8025 2600 8525 2600
 Wire Wire Line
 	4825 3100 5125 3100
 Text Notes 5075 3875 0    40   ~ 0
@@ -1810,7 +1804,7 @@ U 1 1 61B0CABB
 P 7775 4500
 F 0 "R51" V 7750 4325 40  0000 C CNN
 F 1 "0E" V 7782 4501 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 4500 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 4500 30  0001 C CNN
 F 3 "" H 7775 4500 30  0000 C CNN
 	1    7775 4500
 	0    1    1    0   
@@ -1821,7 +1815,7 @@ U 1 1 61B0DBEA
 P 7775 4600
 F 0 "R52" V 7750 4425 40  0000 C CNN
 F 1 "0E" V 7782 4601 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 4600 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 4600 30  0001 C CNN
 F 3 "" H 7775 4600 30  0000 C CNN
 	1    7775 4600
 	0    1    1    0   
@@ -1832,7 +1826,7 @@ U 1 1 61B0DE83
 P 7775 4700
 F 0 "R53" V 7750 4525 40  0000 C CNN
 F 1 "0E" V 7782 4701 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 4700 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 4700 30  0001 C CNN
 F 3 "" H 7775 4700 30  0000 C CNN
 	1    7775 4700
 	0    1    1    0   
@@ -1843,7 +1837,7 @@ U 1 1 61B0E01D
 P 7775 4800
 F 0 "R54" V 7750 4625 40  0000 C CNN
 F 1 "0E" V 7782 4801 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 4800 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 4800 30  0001 C CNN
 F 3 "" H 7775 4800 30  0000 C CNN
 	1    7775 4800
 	0    1    1    0   
@@ -1875,7 +1869,7 @@ U 1 1 61B3CD5D
 P 7775 5100
 F 0 "R55" V 7750 4925 40  0000 C CNN
 F 1 "0E" V 7782 5101 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 5100 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 5100 30  0001 C CNN
 F 3 "" H 7775 5100 30  0000 C CNN
 	1    7775 5100
 	0    1    1    0   
@@ -1886,7 +1880,7 @@ U 1 1 61B3D159
 P 7775 5200
 F 0 "R56" V 7750 5025 40  0000 C CNN
 F 1 "0E" V 7782 5201 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 5200 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 5200 30  0001 C CNN
 F 3 "" H 7775 5200 30  0000 C CNN
 	1    7775 5200
 	0    1    1    0   
@@ -1897,7 +1891,7 @@ U 1 1 61B3D43E
 P 7775 5300
 F 0 "R57" V 7750 5125 40  0000 C CNN
 F 1 "0E" V 7782 5301 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 5300 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 5300 30  0001 C CNN
 F 3 "" H 7775 5300 30  0000 C CNN
 	1    7775 5300
 	0    1    1    0   
@@ -1908,7 +1902,7 @@ U 1 1 61B3D75C
 P 7775 5400
 F 0 "R58" V 7750 5225 40  0000 C CNN
 F 1 "0E" V 7782 5401 40  0000 C CNN
-F 2 "AA_vayu:R_0603_1608Metric" V 7705 5400 30  0001 C CNN
+F 2 "AA_vayu:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" V 7705 5400 30  0001 C CNN
 F 3 "" H 7775 5400 30  0000 C CNN
 	1    7775 5400
 	0    1    1    0   
@@ -2023,4 +2017,12 @@ Wire Wire Line
 	2050 6350 2350 6350
 Text Label 2050 6350 0    40   ~ 0
 GNDPWR
+Wire Wire Line
+	2350 7425 2050 7425
+Wire Wire Line
+	2050 7525 2350 7525
+Text Label 2050 7525 0    40   ~ 0
+GND
+Text Label 2050 7425 0    40   ~ 0
+5V
 $EndSCHEMATC
