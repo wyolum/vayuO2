@@ -1,4 +1,4 @@
-update=Mon Oct  4 13:55:27 2021
+update=Tue Oct  5 16:14:42 2021
 version=1
 last_client=kicad
 [cvpcb]
@@ -44,7 +44,7 @@ TrackWidth3=0.25
 TrackWidth4=0.5
 TrackWidth5=0.75
 TrackWidth6=1
-TrackWidth7=2
+TrackWidth7=1.5
 ViaDiameter1=0.9
 ViaDrill1=0.5
 dPairWidth1=0.2
@@ -264,17 +264,6 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
-Name=0.2mm
-Clearance=0.1016
-TrackWidth=0.2
-ViaDiameter=0.9
-ViaDrill=0.5
-uViaDiameter=0.508
-uViaDrill=0.127
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/3]
 Name=0.5mm
 Clearance=0.1016
 TrackWidth=0.5
@@ -285,7 +274,7 @@ uViaDrill=0.127
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/4]
+[pcbnew/Netclasses/3]
 Name=1.0mm
 Clearance=0.1016
 TrackWidth=1
@@ -296,21 +285,10 @@ uViaDrill=0.127
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/5]
-Name=10mil
+[pcbnew/Netclasses/4]
+Name=1.5mm
 Clearance=0.1016
-TrackWidth=0.254
-ViaDiameter=0.9
-ViaDrill=0.5
-uViaDiameter=0.508
-uViaDrill=0.127
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/6]
-Name=2.0mm
-Clearance=0.1016
-TrackWidth=2
+TrackWidth=1.5
 ViaDiameter=0.9
 ViaDrill=0.5
 uViaDiameter=0.508
