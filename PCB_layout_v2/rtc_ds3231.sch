@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 5
 Title "vayuO2"
-Date "2021-10-02"
-Rev "rev 1"
+Date "2021-10-11"
+Rev "rev 2"
 Comp "Vayu"
 Comment1 "https://github.com/wyolum/ClockIOT"
 Comment2 ""
