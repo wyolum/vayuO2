@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Conn_01x06
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP DS3231_module
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Q_NPN_MMBT3904
+D 0.8A Ic, 45V Vce, NPN Transistor, SOT-23
+K NPN Transistor
+F https://www.onsemi.com/pub/Collateral/BC818-D.pdf
+$ENDCMP
+#
+#End Doc Library
