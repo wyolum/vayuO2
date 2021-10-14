@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 5
 Title "vayuO2 - controller for Oxygen Concentrator"
-Date "2021-10-11"
-Rev "rev 2"
+Date "2021-10-14"
+Rev "rev 3"
 Comp "Vayu"
 Comment1 ""
 Comment2 ""
