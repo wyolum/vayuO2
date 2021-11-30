@@ -1,0 +1,1064 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "vayuO2"
+Date "2021-10-11"
+Rev "rev 2"
+Comp "Vayu"
+Comment1 "controller for Cafe Veloce eBicycle"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 950  825  0    40   ~ 0
+24V
+Wire Wire Line
+	2825 1775 2825 1725
+Connection ~ 3875 825 
+$Comp
+L AA_vayuO2_symbols:D_Schottky_Small D4
+U 1 1 6156D24A
+P 3875 925
+F 0 "D4" V 3825 825 50  0000 R CNB
+F 1 "B220A-13-F" V 3900 800 40  0000 R CNN
+F 2 "AA_vayu:D_SMB" V 3875 925 50  0001 C CNN
+F 3 "~" V 3875 925 50  0001 C CNN
+	1    3875 925 
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:Screw_Terminal_01x02 CN9
+U 1 1 615058F7
+P 4475 825
+F 0 "CN9" H 4675 825 50  0000 L CNB
+F 1 "OUT" H 4675 725 40  0000 L CNN
+F 2 "AA_vayu:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4475 825 50  0001 C CNN
+F 3 "~" H 4475 825 50  0001 C CNN
+F 4 "[+]" H 4525 825 40  0000 L CNB "Field4"
+F 5 "[-]" H 4525 725 40  0000 L CNB "Field5"
+	1    4475 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R21
+U 1 1 614FC31A
+P 3275 1725
+F 0 "R21" V 3175 1725 50  0000 C CNB
+F 1 "100E" V 3275 1725 40  0000 C CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 3205 1725 50  0001 C CNN
+F 3 "~" H 3275 1725 50  0001 C CNN
+	1    3275 1725
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R23
+U 1 1 614FB89C
+P 2825 1925
+F 0 "R23" V 2725 1850 50  0000 L CNB
+F 1 "1k" V 2825 1850 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 2755 1925 50  0001 C CNN
+F 3 "~" H 2825 1925 50  0001 C CNN
+	1    2825 1925
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:MOSFET-N Q3
+U 1 1 614F9E0C
+P 3925 1675
+F 0 "Q3" H 4125 1700 50  0000 L CNB
+F 1 "IRF540NS" H 4125 1625 40  0000 L CNN
+F 2 "AA_vayu:TO-263-3_TabPin2" H 4125 1625 29  0001 L CNN
+F 3 "" H 3925 1675 60  0000 C CNN
+	1    3925 1675
+	1    0    0    -1  
+$EndComp
+Text Label 4100 1450 0    40   ~ 0
+OP1
+Text HLabel 900  825  0    40   Input ~ 0
+24V
+Text HLabel 900  2125 0    40   Input ~ 0
+GND
+$Comp
+L AA_vayuO2_symbols:R R22
+U 1 1 61567307
+P 4025 1000
+F 0 "R22" V 3925 950 50  0000 L CNB
+F 1 "3k3" V 4025 925 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 3955 1000 50  0001 C CNN
+F 3 "~" H 4025 1000 50  0001 C CNN
+	1    4025 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:LED D5
+U 1 1 61568D73
+P 4025 1300
+F 0 "D5" V 3950 1300 40  0000 L CNN
+F 1 "LED" V 4050 1350 40  0000 L CNN
+F 2 "AA_vayu:LED_0603_1608Metric" H 4025 1300 60  0001 C CNN
+F 3 "" H 4025 1300 60  0000 C CNN
+F 4 "LED SS 5MM 625NM RED DIFF" H 4025 1500 60  0001 L CNN "Field4"
+F 5 "2V, 10mA" H 4025 1600 60  0001 L CNN "Field5"
+F 6 "Round with Domed Top, 5mm, T-1 3/4" H 4025 1700 60  0001 L CNN "Field6"
+F 7 "Kingbright Corp" H 4025 1800 60  0001 L CNN "Field7"
+F 8 "WP7113ID" H 4025 1900 60  0001 L CNN "Field8"
+F 9 "Digikey" H 4025 2000 60  0001 L CNN "Field9"
+F 10 "754-1264-ND" H 4025 2100 60  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/product-detail/en/WP7113ID/754-1264-ND/1747663" H 4025 2200 60  0001 L CNN "Field11"
+	1    4025 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 1875 4025 2125
+Wire Wire Line
+	2825 2075 2825 2125
+Wire Wire Line
+	2825 2125 4025 2125
+$Comp
+L AA_vayuO2_symbols:C_NP C21
+U 1 1 6157D2E9
+P 1600 1850
+F 0 "C21" H 1725 1900 50  0000 L CNB
+F 1 "100nF" H 1725 1800 40  0000 L CNN
+F 2 "AA_vayu:C_0603_1608Metric" H 1600 1850 60  0001 C CNN
+F 3 "" H 1600 1850 60  0000 C CNN
+	1    1600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R20
+U 1 1 6157DF6D
+P 1350 1625
+F 0 "R20" V 1425 1575 50  0000 L CNB
+F 1 "330E" V 1350 1550 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 1280 1625 50  0001 C CNN
+F 3 "~" H 1350 1625 50  0001 C CNN
+	1    1350 1625
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 1625 1600 1625
+Wire Wire Line
+	1600 1700 1600 1625
+Wire Wire Line
+	1600 2000 1600 2125
+Text Label 1600 1625 0    40   ~ 0
+filter1
+Text Label 925  1625 0    40   ~ 0
+OUT1
+Wire Wire Line
+	4275 825  4025 825 
+Wire Wire Line
+	4275 925  4225 925 
+Wire Wire Line
+	900  2125 1600 2125
+Wire Wire Line
+	900  1625 1200 1625
+Text HLabel 900  1625 0    40   Input ~ 0
+OUT1
+$Comp
+L AA_vayuO2_symbols:PS2801-4 U5
+U 1 1 616348AD
+P 2325 1675
+F 0 "U5" H 2350 1975 50  0000 C CNB
+F 1 "PS2801-4" H 2350 1875 40  0000 C CNN
+F 2 "AA_vayu:SO-16_5.3x10.2mm_P1.27mm" H 2325 1375 50  0001 C CIN
+F 3 "" H 2300 1650 50  0001 L CNN
+	1    2325 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1625 2025 1625
+Connection ~ 1600 1625
+Wire Wire Line
+	2025 1725 1925 1725
+Wire Wire Line
+	1925 1725 1925 2125
+Wire Wire Line
+	1925 2125 1600 2125
+Connection ~ 1600 2125
+Text Label 4025 2125 0    40   ~ 0
+GNDPWR
+Text Label 925  2125 0    40   ~ 0
+GND
+Text HLabel 900  2225 0    40   Input ~ 0
+GNDPWR
+Wire Wire Line
+	900  2225 4025 2225
+Wire Wire Line
+	4025 2225 4025 2125
+Connection ~ 4025 2125
+Text Label 925  2225 0    40   ~ 0
+GNDPWR
+Text Label 900  2525 0    40   ~ 0
+24V
+Wire Wire Line
+	2625 3425 2825 3425
+Connection ~ 3875 2525
+$Comp
+L AA_vayuO2_symbols:D_Schottky_Small D1
+U 1 1 61650F66
+P 3875 2625
+F 0 "D1" V 3825 2525 50  0000 R CNB
+F 1 "B220A-13-F" V 3900 2500 40  0000 R CNN
+F 2 "AA_vayu:D_SMB" V 3875 2625 50  0001 C CNN
+F 3 "~" V 3875 2625 50  0001 C CNN
+	1    3875 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:Screw_Terminal_01x02 CN10
+U 1 1 61650F72
+P 4475 2525
+F 0 "CN10" H 4675 2525 50  0000 L CNB
+F 1 "OUT" H 4675 2425 40  0000 L CNN
+F 2 "AA_vayu:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4475 2525 50  0001 C CNN
+F 3 "~" H 4475 2525 50  0001 C CNN
+F 4 "[+]" H 4525 2525 40  0000 L CNB "Field4"
+F 5 "[-]" H 4525 2425 40  0000 L CNB "Field5"
+	1    4475 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R25
+U 1 1 61650F7C
+P 3275 3425
+F 0 "R25" V 3175 3425 50  0000 C CNB
+F 1 "100E" V 3275 3425 40  0000 C CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 3205 3425 50  0001 C CNN
+F 3 "~" H 3275 3425 50  0001 C CNN
+	1    3275 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R27
+U 1 1 61650F86
+P 2825 3625
+F 0 "R27" V 2725 3550 50  0000 L CNB
+F 1 "1k" V 2825 3550 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 2755 3625 50  0001 C CNN
+F 3 "~" H 2825 3625 50  0001 C CNN
+	1    2825 3625
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:MOSFET-N Q4
+U 1 1 61650F90
+P 3925 3375
+F 0 "Q4" H 4125 3400 50  0000 L CNB
+F 1 "IRF540NS" H 4125 3325 40  0000 L CNN
+F 2 "AA_vayu:TO-263-3_TabPin2" H 4125 3325 29  0001 L CNN
+F 3 "" H 3925 3375 60  0000 C CNN
+	1    3925 3375
+	1    0    0    -1  
+$EndComp
+Text Label 4125 3150 0    40   ~ 0
+OP2
+$Comp
+L AA_vayuO2_symbols:R R26
+U 1 1 61650F9D
+P 4025 2700
+F 0 "R26" V 3925 2625 50  0000 L CNB
+F 1 "3k3" V 4025 2625 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 3955 2700 50  0001 C CNN
+F 3 "~" H 4025 2700 50  0001 C CNN
+	1    4025 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:LED D6
+U 1 1 61650FAF
+P 4025 3000
+F 0 "D6" V 3950 3000 40  0000 L CNN
+F 1 "LED" V 4050 3075 40  0000 L CNN
+F 2 "AA_vayu:LED_0603_1608Metric" H 4025 3000 60  0001 C CNN
+F 3 "" H 4025 3000 60  0000 C CNN
+F 4 "LED SS 5MM 625NM RED DIFF" H 4025 3200 60  0001 L CNN "Field4"
+F 5 "2V, 10mA" H 4025 3300 60  0001 L CNN "Field5"
+F 6 "Round with Domed Top, 5mm, T-1 3/4" H 4025 3400 60  0001 L CNN "Field6"
+F 7 "Kingbright Corp" H 4025 3500 60  0001 L CNN "Field7"
+F 8 "WP7113ID" H 4025 3600 60  0001 L CNN "Field8"
+F 9 "Digikey" H 4025 3700 60  0001 L CNN "Field9"
+F 10 "754-1264-ND" H 4025 3800 60  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/product-detail/en/WP7113ID/754-1264-ND/1747663" H 4025 3900 60  0001 L CNN "Field11"
+	1    4025 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 3575 4025 3825
+Wire Wire Line
+	2825 3775 2825 3825
+Wire Wire Line
+	2825 3825 4025 3825
+$Comp
+L AA_vayuO2_symbols:C_NP C22
+U 1 1 61650FC2
+P 1600 3550
+F 0 "C22" H 1725 3600 50  0000 L CNB
+F 1 "100nF" H 1725 3500 40  0000 L CNN
+F 2 "AA_vayu:C_0603_1608Metric" H 1600 3550 60  0001 C CNN
+F 3 "" H 1600 3550 60  0000 C CNN
+	1    1600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R24
+U 1 1 61650FCC
+P 1350 3325
+F 0 "R24" V 1425 3275 50  0000 L CNB
+F 1 "330E" V 1350 3250 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 1280 3325 50  0001 C CNN
+F 3 "~" H 1350 3325 50  0001 C CNN
+	1    1350 3325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 3325 1600 3325
+Wire Wire Line
+	1600 3400 1600 3325
+Wire Wire Line
+	1600 3700 1600 3825
+Text Label 1600 3325 0    40   ~ 0
+filter2
+Text Label 925  3325 0    40   ~ 0
+OUT2
+Wire Wire Line
+	4275 2525 4025 2525
+Wire Wire Line
+	4275 2625 4250 2625
+Wire Wire Line
+	900  3825 1600 3825
+Wire Wire Line
+	900  3325 1200 3325
+Text HLabel 900  3325 0    40   Input ~ 0
+OUT2
+Wire Wire Line
+	900  2525 2825 2525
+$Comp
+L AA_vayuO2_symbols:PS2801-4 U5
+U 2 1 61650FE4
+P 2325 3375
+F 0 "U5" H 2350 3675 50  0000 C CNB
+F 1 "PS2801-4" H 2350 3575 40  0000 C CNN
+F 2 "AA_vayu:SO-16_5.3x10.2mm_P1.27mm" H 2325 3075 50  0001 C CIN
+F 3 "" H 2300 3350 50  0001 L CNN
+	2    2325 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3325 2025 3325
+Connection ~ 1600 3325
+Wire Wire Line
+	2025 3425 1925 3425
+Wire Wire Line
+	1925 3425 1925 3825
+Wire Wire Line
+	1925 3825 1600 3825
+Connection ~ 1600 3825
+Text Label 4025 3825 0    40   ~ 0
+GNDPWR
+Text Label 900  3825 0    40   ~ 0
+GND
+Wire Wire Line
+	900  3925 4025 3925
+Wire Wire Line
+	4025 3925 4025 3825
+Connection ~ 4025 3825
+Text Label 900  3925 0    40   ~ 0
+GNDPWR
+Text Label 900  4225 0    40   ~ 0
+24V
+Wire Wire Line
+	2625 5125 2825 5125
+Connection ~ 3875 4225
+$Comp
+L AA_vayuO2_symbols:D_Schottky_Small D7
+U 1 1 6165FB90
+P 3875 4325
+F 0 "D7" V 3825 4225 50  0000 R CNB
+F 1 "B220A-13-F" V 3900 4200 40  0000 R CNN
+F 2 "AA_vayu:D_SMB" V 3875 4325 50  0001 C CNN
+F 3 "~" V 3875 4325 50  0001 C CNN
+	1    3875 4325
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:Screw_Terminal_01x02 CN11
+U 1 1 6165FB9C
+P 4475 4225
+F 0 "CN11" H 4675 4225 50  0000 L CNB
+F 1 "OUT" H 4675 4125 40  0000 L CNN
+F 2 "AA_vayu:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 4475 4225 50  0001 C CNN
+F 3 "~" H 4475 4225 50  0001 C CNN
+F 4 "[+]" H 4525 4225 40  0000 L CNB "Field4"
+F 5 "[-]" H 4525 4125 40  0000 L CNB "Field5"
+	1    4475 4225
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R29
+U 1 1 6165FBA6
+P 3275 5125
+F 0 "R29" V 3175 5125 50  0000 C CNB
+F 1 "100E" V 3275 5125 40  0000 C CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 3205 5125 50  0001 C CNN
+F 3 "~" H 3275 5125 50  0001 C CNN
+	1    3275 5125
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R31
+U 1 1 6165FBB0
+P 2825 5325
+F 0 "R31" V 2725 5250 50  0000 L CNB
+F 1 "1k" V 2825 5250 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 2755 5325 50  0001 C CNN
+F 3 "~" H 2825 5325 50  0001 C CNN
+	1    2825 5325
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:MOSFET-N Q5
+U 1 1 6165FBBA
+P 3925 5075
+F 0 "Q5" H 4125 5100 50  0000 L CNB
+F 1 "IRF540NS" H 4125 5025 40  0000 L CNN
+F 2 "AA_vayu:TO-263-3_TabPin2" H 4125 5025 29  0001 L CNN
+F 3 "" H 3925 5075 60  0000 C CNN
+	1    3925 5075
+	1    0    0    -1  
+$EndComp
+Text Label 4100 4850 0    40   ~ 0
+OP3
+$Comp
+L AA_vayuO2_symbols:R R30
+U 1 1 6165FBC7
+P 4025 4400
+F 0 "R30" V 3925 4325 50  0000 L CNB
+F 1 "3k3" V 4025 4325 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 3955 4400 50  0001 C CNN
+F 3 "~" H 4025 4400 50  0001 C CNN
+	1    4025 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:LED D8
+U 1 1 6165FBD9
+P 4025 4700
+F 0 "D8" V 3950 4700 40  0000 L CNN
+F 1 "LED" V 4050 4750 40  0000 L CNN
+F 2 "AA_vayu:LED_0603_1608Metric" H 4025 4700 60  0001 C CNN
+F 3 "" H 4025 4700 60  0000 C CNN
+F 4 "LED SS 5MM 625NM RED DIFF" H 4025 4900 60  0001 L CNN "Field4"
+F 5 "2V, 10mA" H 4025 5000 60  0001 L CNN "Field5"
+F 6 "Round with Domed Top, 5mm, T-1 3/4" H 4025 5100 60  0001 L CNN "Field6"
+F 7 "Kingbright Corp" H 4025 5200 60  0001 L CNN "Field7"
+F 8 "WP7113ID" H 4025 5300 60  0001 L CNN "Field8"
+F 9 "Digikey" H 4025 5400 60  0001 L CNN "Field9"
+F 10 "754-1264-ND" H 4025 5500 60  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/product-detail/en/WP7113ID/754-1264-ND/1747663" H 4025 5600 60  0001 L CNN "Field11"
+	1    4025 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4025 5275 4025 5525
+Wire Wire Line
+	2825 5475 2825 5525
+Wire Wire Line
+	2825 5525 4025 5525
+$Comp
+L AA_vayuO2_symbols:C_NP C23
+U 1 1 6165FBEC
+P 1600 5250
+F 0 "C23" H 1725 5300 50  0000 L CNB
+F 1 "100nF" H 1725 5200 40  0000 L CNN
+F 2 "AA_vayu:C_0603_1608Metric" H 1600 5250 60  0001 C CNN
+F 3 "" H 1600 5250 60  0000 C CNN
+	1    1600 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R28
+U 1 1 6165FBF6
+P 1350 5025
+F 0 "R28" V 1425 4975 50  0000 L CNB
+F 1 "330E" V 1350 4950 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 1280 5025 50  0001 C CNN
+F 3 "~" H 1350 5025 50  0001 C CNN
+	1    1350 5025
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 5025 1600 5025
+Wire Wire Line
+	1600 5100 1600 5025
+Wire Wire Line
+	1600 5400 1600 5525
+Text Label 1600 5025 0    40   ~ 0
+filter3
+Text Label 925  5025 0    40   ~ 0
+OUT3
+Wire Wire Line
+	4275 4225 4025 4225
+Wire Wire Line
+	900  5525 1600 5525
+Wire Wire Line
+	900  5025 1200 5025
+Text HLabel 900  5025 0    40   Input ~ 0
+OUT3
+Wire Wire Line
+	900  4225 2825 4225
+$Comp
+L AA_vayuO2_symbols:PS2801-4 U5
+U 3 1 6165FC0E
+P 2325 5075
+F 0 "U5" H 2350 5375 50  0000 C CNB
+F 1 "PS2801-4" H 2350 5275 40  0000 C CNN
+F 2 "AA_vayu:SO-16_5.3x10.2mm_P1.27mm" H 2325 4775 50  0001 C CIN
+F 3 "" H 2300 5050 50  0001 L CNN
+	3    2325 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5025 2025 5025
+Connection ~ 1600 5025
+Wire Wire Line
+	2025 5125 1925 5125
+Wire Wire Line
+	1925 5125 1925 5525
+Wire Wire Line
+	1925 5525 1600 5525
+Connection ~ 1600 5525
+Text Label 4025 5525 0    40   ~ 0
+GNDPWR
+Text Label 900  5525 0    40   ~ 0
+GND
+Wire Wire Line
+	900  5625 4025 5625
+Wire Wire Line
+	4025 5625 4025 5525
+Connection ~ 4025 5525
+Text Label 900  5625 0    40   ~ 0
+GNDPWR
+$Comp
+L AA_vayuO2_symbols:D_Schottky_Small D9
+U 1 1 6165FC32
+P 9000 925
+F 0 "D9" V 8950 825 50  0000 R CNB
+F 1 "B220A-13-F" V 9025 800 40  0000 R CNN
+F 2 "AA_vayu:D_SMB" V 9000 925 50  0001 C CNN
+F 3 "~" V 9000 925 50  0001 C CNN
+	1    9000 925 
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:Screw_Terminal_01x02 CN12
+U 1 1 6165FC3E
+P 9600 825
+F 0 "CN12" H 9800 825 50  0000 L CNB
+F 1 "OUT" H 9800 725 40  0000 L CNN
+F 2 "AA_vayu:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9600 825 50  0001 C CNN
+F 3 "~" H 9600 825 50  0001 C CNN
+F 4 "[+]" H 9650 825 40  0000 L CNB "Field4"
+F 5 "[-]" H 9650 725 40  0000 L CNB "Field5"
+	1    9600 825 
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R33
+U 1 1 6165FC48
+P 8400 1725
+F 0 "R33" V 8300 1725 50  0000 C CNB
+F 1 "100E" V 8400 1725 40  0000 C CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 8330 1725 50  0001 C CNN
+F 3 "~" H 8400 1725 50  0001 C CNN
+	1    8400 1725
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R35
+U 1 1 6165FC52
+P 7950 1925
+F 0 "R35" V 7850 1850 50  0000 L CNB
+F 1 "1k" V 7950 1850 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 7880 1925 50  0001 C CNN
+F 3 "~" H 7950 1925 50  0001 C CNN
+	1    7950 1925
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:MOSFET-N Q6
+U 1 1 6165FC5C
+P 9050 1675
+F 0 "Q6" H 9250 1700 50  0000 L CNB
+F 1 "IRF540NS" H 9250 1625 40  0000 L CNN
+F 2 "AA_vayu:TO-263-3_TabPin2" H 9250 1625 29  0001 L CNN
+F 3 "" H 9050 1675 60  0000 C CNN
+	1    9050 1675
+	1    0    0    -1  
+$EndComp
+Text Label 9225 1450 0    40   ~ 0
+OP4
+$Comp
+L AA_vayuO2_symbols:R R34
+U 1 1 6165FC69
+P 9150 1000
+F 0 "R34" V 9050 925 50  0000 L CNB
+F 1 "3k3" V 9150 925 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 9080 1000 50  0001 C CNN
+F 3 "~" H 9150 1000 50  0001 C CNN
+	1    9150 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:LED D10
+U 1 1 6165FC7B
+P 9150 1300
+F 0 "D10" V 9075 1300 40  0000 L CNN
+F 1 "LED" V 9175 1350 40  0000 L CNN
+F 2 "AA_vayu:LED_0603_1608Metric" H 9150 1300 60  0001 C CNN
+F 3 "" H 9150 1300 60  0000 C CNN
+F 4 "LED SS 5MM 625NM RED DIFF" H 9150 1500 60  0001 L CNN "Field4"
+F 5 "2V, 10mA" H 9150 1600 60  0001 L CNN "Field5"
+F 6 "Round with Domed Top, 5mm, T-1 3/4" H 9150 1700 60  0001 L CNN "Field6"
+F 7 "Kingbright Corp" H 9150 1800 60  0001 L CNN "Field7"
+F 8 "WP7113ID" H 9150 1900 60  0001 L CNN "Field8"
+F 9 "Digikey" H 9150 2000 60  0001 L CNN "Field9"
+F 10 "754-1264-ND" H 9150 2100 60  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/product-detail/en/WP7113ID/754-1264-ND/1747663" H 9150 2200 60  0001 L CNN "Field11"
+	1    9150 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:C_NP C24
+U 1 1 6165FC8E
+P 6725 1850
+F 0 "C24" H 6850 1900 50  0000 L CNB
+F 1 "100nF" H 6850 1800 40  0000 L CNN
+F 2 "AA_vayu:C_0603_1608Metric" H 6725 1850 60  0001 C CNN
+F 3 "" H 6725 1850 60  0000 C CNN
+	1    6725 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R32
+U 1 1 6165FC98
+P 6475 1625
+F 0 "R32" V 6550 1575 50  0000 L CNB
+F 1 "330E" V 6475 1550 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 6405 1625 50  0001 C CNN
+F 3 "~" H 6475 1625 50  0001 C CNN
+	1    6475 1625
+	0    -1   -1   0   
+$EndComp
+Text Label 6750 1625 0    40   ~ 0
+filter4
+Text Label 6050 1625 0    40   ~ 0
+OUT4
+Text HLabel 6025 1625 0    40   Input ~ 0
+OUT4
+$Comp
+L AA_vayuO2_symbols:PS2801-4 U5
+U 4 1 6165FCB0
+P 7450 1675
+F 0 "U5" H 7475 1975 50  0000 C CNB
+F 1 "PS2801-4" H 7475 1875 40  0000 C CNN
+F 2 "AA_vayu:SO-16_5.3x10.2mm_P1.27mm" H 7450 1375 50  0001 C CIN
+F 3 "" H 7425 1650 50  0001 L CNN
+	4    7450 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:D_Schottky_Small D11
+U 1 1 6167D550
+P 9000 2625
+F 0 "D11" V 8950 2525 50  0000 R CNB
+F 1 "B220A-13-F" V 9025 2500 40  0000 R CNN
+F 2 "AA_vayu:D_SMB" V 9000 2625 50  0001 C CNN
+F 3 "~" V 9000 2625 50  0001 C CNN
+	1    9000 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:Screw_Terminal_01x02 CN13
+U 1 1 6167D55C
+P 9600 2525
+F 0 "CN13" H 9800 2525 50  0000 L CNB
+F 1 "OUT" H 9800 2425 40  0000 L CNN
+F 2 "AA_vayu:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 9600 2525 50  0001 C CNN
+F 3 "~" H 9600 2525 50  0001 C CNN
+F 4 "[+]" H 9650 2525 40  0000 L CNB "Field4"
+F 5 "[-]" H 9650 2425 40  0000 L CNB "Field5"
+	1    9600 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R37
+U 1 1 6167D566
+P 8400 3425
+F 0 "R37" V 8300 3425 50  0000 C CNB
+F 1 "100E" V 8400 3425 40  0000 C CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 8330 3425 50  0001 C CNN
+F 3 "~" H 8400 3425 50  0001 C CNN
+	1    8400 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R39
+U 1 1 6167D570
+P 7950 3625
+F 0 "R39" V 7850 3550 50  0000 L CNB
+F 1 "1k" V 7950 3550 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 7880 3625 50  0001 C CNN
+F 3 "~" H 7950 3625 50  0001 C CNN
+	1    7950 3625
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:MOSFET-N Q7
+U 1 1 6167D57A
+P 9050 3375
+F 0 "Q7" H 9250 3400 50  0000 L CNB
+F 1 "IRF540NS" H 9250 3325 40  0000 L CNN
+F 2 "AA_vayu:TO-263-3_TabPin2" H 9250 3325 29  0001 L CNN
+F 3 "" H 9050 3375 60  0000 C CNN
+	1    9050 3375
+	1    0    0    -1  
+$EndComp
+Text Label 9225 3150 0    40   ~ 0
+OP5
+$Comp
+L AA_vayuO2_symbols:R R38
+U 1 1 6167D587
+P 9150 2700
+F 0 "R38" V 9050 2625 50  0000 L CNB
+F 1 "3k3" V 9150 2625 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 9080 2700 50  0001 C CNN
+F 3 "~" H 9150 2700 50  0001 C CNN
+	1    9150 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:LED D12
+U 1 1 6167D599
+P 9150 3000
+F 0 "D12" V 9075 3025 40  0000 L CNN
+F 1 "LED" V 9175 3050 40  0000 L CNN
+F 2 "AA_vayu:LED_0603_1608Metric" H 9150 3000 60  0001 C CNN
+F 3 "" H 9150 3000 60  0000 C CNN
+F 4 "LED SS 5MM 625NM RED DIFF" H 9150 3200 60  0001 L CNN "Field4"
+F 5 "2V, 10mA" H 9150 3300 60  0001 L CNN "Field5"
+F 6 "Round with Domed Top, 5mm, T-1 3/4" H 9150 3400 60  0001 L CNN "Field6"
+F 7 "Kingbright Corp" H 9150 3500 60  0001 L CNN "Field7"
+F 8 "WP7113ID" H 9150 3600 60  0001 L CNN "Field8"
+F 9 "Digikey" H 9150 3700 60  0001 L CNN "Field9"
+F 10 "754-1264-ND" H 9150 3800 60  0001 L CNN "Field10"
+F 11 "http://www.digikey.com/product-detail/en/WP7113ID/754-1264-ND/1747663" H 9150 3900 60  0001 L CNN "Field11"
+	1    9150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L AA_vayuO2_symbols:C_NP C25
+U 1 1 6167D5AC
+P 6725 3550
+F 0 "C25" H 6850 3600 50  0000 L CNB
+F 1 "100nF" H 6850 3500 40  0000 L CNN
+F 2 "AA_vayu:C_0603_1608Metric" H 6725 3550 60  0001 C CNN
+F 3 "" H 6725 3550 60  0000 C CNN
+	1    6725 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L AA_vayuO2_symbols:R R36
+U 1 1 6167D5B6
+P 6475 3325
+F 0 "R36" V 6550 3275 50  0000 L CNB
+F 1 "330E" V 6475 3250 40  0000 L CNN
+F 2 "AA_vayu:R_0603_1608Metric" V 6405 3325 50  0001 C CNN
+F 3 "~" H 6475 3325 50  0001 C CNN
+	1    6475 3325
+	0    -1   -1   0   
+$EndComp
+Text Label 6775 3325 0    40   ~ 0
+filter5
+Text Label 6050 3325 0    40   ~ 0
+OUT5
+Text HLabel 6025 3325 0    40   Input ~ 0
+OUT5
+$Comp
+L AA_vayuO2_symbols:PS2801-1 U10
+U 1 1 6167D5CE
+P 7450 3375
+F 0 "U10" H 7475 3675 50  0000 C CNB
+F 1 "PS2801-1" H 7475 3575 40  0000 C CNN
+F 2 "AA_vayu:SO-4_5.3x2.7mm_P1.27mm" H 7450 3075 50  0001 C CIN
+F 3 "" H 7425 3350 50  0001 L CNN
+	1    7450 3375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 1625 2825 1625
+Wire Wire Line
+	900  825  2825 825 
+Connection ~ 2825 825 
+Wire Wire Line
+	2825 825  3875 825 
+Wire Wire Line
+	2625 1725 2825 1725
+Wire Wire Line
+	3875 1025 3875 1450
+Wire Wire Line
+	3875 1450 4025 1450
+Connection ~ 4025 1450
+Wire Wire Line
+	4025 1450 4025 1475
+Wire Wire Line
+	4025 1450 4225 1450
+Wire Wire Line
+	4225 1450 4225 925 
+Wire Wire Line
+	4025 850  4025 825 
+Connection ~ 4025 825 
+Wire Wire Line
+	4025 825  3875 825 
+Wire Wire Line
+	2825 3475 2825 3425
+Connection ~ 2825 2525
+Wire Wire Line
+	2825 2525 3875 2525
+Wire Wire Line
+	2825 3325 2625 3325
+Wire Wire Line
+	3875 2725 3875 3150
+Wire Wire Line
+	3875 3150 4025 3150
+Connection ~ 4025 3150
+Wire Wire Line
+	4025 3150 4025 3175
+Wire Wire Line
+	4025 3150 4250 3150
+Wire Wire Line
+	4250 3150 4250 2625
+Wire Wire Line
+	4025 2550 4025 2525
+Connection ~ 4025 2525
+Wire Wire Line
+	4025 2525 3875 2525
+Wire Wire Line
+	2825 5175 2825 5125
+Connection ~ 2825 4225
+Wire Wire Line
+	2825 4225 3875 4225
+Wire Wire Line
+	2825 5025 2625 5025
+Wire Wire Line
+	3875 4425 3875 4850
+Wire Wire Line
+	3875 4850 4025 4850
+Wire Wire Line
+	4025 4850 4025 4875
+Wire Wire Line
+	4025 4850 4225 4850
+Wire Wire Line
+	4225 4850 4225 4325
+Wire Wire Line
+	4225 4325 4275 4325
+Connection ~ 4025 4850
+Wire Wire Line
+	4025 4250 4025 4225
+Connection ~ 4025 4225
+Wire Wire Line
+	4025 4225 3875 4225
+Text Label 6075 825  0    40   ~ 0
+24V
+Wire Wire Line
+	7950 1775 7950 1725
+Text HLabel 6025 825  0    40   Input ~ 0
+24V
+Text HLabel 6025 2125 0    40   Input ~ 0
+GND
+Wire Wire Line
+	9150 1875 9150 2125
+Wire Wire Line
+	7950 2075 7950 2125
+Wire Wire Line
+	7950 2125 9150 2125
+Wire Wire Line
+	6625 1625 6725 1625
+Wire Wire Line
+	6725 1700 6725 1625
+Wire Wire Line
+	6725 2000 6725 2125
+Wire Wire Line
+	9400 825  9150 825 
+Wire Wire Line
+	9400 925  9350 925 
+Wire Wire Line
+	6025 2125 6725 2125
+Wire Wire Line
+	6025 1625 6325 1625
+Wire Wire Line
+	6725 1625 7150 1625
+Connection ~ 6725 1625
+Wire Wire Line
+	7150 1725 7050 1725
+Wire Wire Line
+	7050 1725 7050 2125
+Wire Wire Line
+	7050 2125 6725 2125
+Connection ~ 6725 2125
+Text Label 9150 2125 0    40   ~ 0
+GNDPWR
+Text Label 6050 2125 0    40   ~ 0
+GND
+Text HLabel 6025 2225 0    40   Input ~ 0
+GNDPWR
+Wire Wire Line
+	6025 2225 9150 2225
+Wire Wire Line
+	9150 2225 9150 2125
+Connection ~ 9150 2125
+Text Label 6050 2225 0    40   ~ 0
+GNDPWR
+Wire Wire Line
+	7750 1625 7950 1625
+Wire Wire Line
+	6025 825  7950 825 
+Connection ~ 7950 825 
+Wire Wire Line
+	7750 1725 7950 1725
+Wire Wire Line
+	9000 1025 9000 1450
+Wire Wire Line
+	9000 1450 9150 1450
+Connection ~ 9150 1450
+Wire Wire Line
+	9150 1450 9150 1475
+Wire Wire Line
+	9150 1450 9350 1450
+Wire Wire Line
+	9350 1450 9350 925 
+Wire Wire Line
+	9150 850  9150 825 
+Connection ~ 9150 825 
+Wire Wire Line
+	7950 825  9000 825 
+Connection ~ 9000 825 
+Wire Wire Line
+	9000 825  9150 825 
+Text Label 6075 2525 0    40   ~ 0
+24V
+Wire Wire Line
+	7950 3475 7950 3425
+Text HLabel 6025 2525 0    40   Input ~ 0
+24V
+Text HLabel 6025 3825 0    40   Input ~ 0
+GND
+Wire Wire Line
+	9150 3575 9150 3825
+Wire Wire Line
+	7950 3775 7950 3825
+Wire Wire Line
+	7950 3825 9150 3825
+Wire Wire Line
+	6625 3325 6725 3325
+Wire Wire Line
+	6725 3400 6725 3325
+Wire Wire Line
+	6725 3700 6725 3825
+Wire Wire Line
+	9400 2525 9150 2525
+Wire Wire Line
+	9400 2625 9350 2625
+Wire Wire Line
+	6025 3825 6725 3825
+Wire Wire Line
+	6025 3325 6325 3325
+Wire Wire Line
+	6725 3325 7150 3325
+Connection ~ 6725 3325
+Wire Wire Line
+	7150 3425 7050 3425
+Wire Wire Line
+	7050 3425 7050 3825
+Wire Wire Line
+	7050 3825 6725 3825
+Connection ~ 6725 3825
+Text Label 9150 3825 0    40   ~ 0
+GNDPWR
+Text Label 6050 3825 0    40   ~ 0
+GND
+Text HLabel 6025 3925 0    40   Input ~ 0
+GNDPWR
+Wire Wire Line
+	6025 3925 9150 3925
+Wire Wire Line
+	9150 3925 9150 3825
+Connection ~ 9150 3825
+Text Label 6050 3925 0    40   ~ 0
+GNDPWR
+Wire Wire Line
+	7750 3325 7950 3325
+Wire Wire Line
+	6025 2525 7950 2525
+Connection ~ 7950 2525
+Wire Wire Line
+	7750 3425 7950 3425
+Wire Wire Line
+	9000 2725 9000 3150
+Wire Wire Line
+	9000 3150 9150 3150
+Connection ~ 9150 3150
+Wire Wire Line
+	9150 3150 9150 3175
+Wire Wire Line
+	9150 3150 9350 3150
+Wire Wire Line
+	9350 3150 9350 2625
+Wire Wire Line
+	9150 2550 9150 2525
+Connection ~ 9150 2525
+Wire Wire Line
+	7950 2525 9000 2525
+Connection ~ 9000 2525
+Wire Wire Line
+	9000 2525 9150 2525
+Wire Wire Line
+	2825 825  2825 1625
+Wire Wire Line
+	3125 1725 2825 1725
+Connection ~ 2825 1725
+Wire Wire Line
+	3425 1725 3725 1725
+Wire Wire Line
+	3425 3425 3725 3425
+Wire Wire Line
+	3125 3425 2825 3425
+Connection ~ 2825 3425
+Wire Wire Line
+	2825 2525 2825 3325
+Wire Wire Line
+	3425 5125 3725 5125
+Wire Wire Line
+	3125 5125 2825 5125
+Connection ~ 2825 5125
+Wire Wire Line
+	2825 4225 2825 5025
+Wire Wire Line
+	8250 1725 7950 1725
+Connection ~ 7950 1725
+Wire Wire Line
+	8550 1725 8850 1725
+Wire Wire Line
+	7950 825  7950 1625
+Wire Wire Line
+	8250 3425 7950 3425
+Connection ~ 7950 3425
+Wire Wire Line
+	8550 3425 8850 3425
+Wire Wire Line
+	7950 2525 7950 3325
+$EndSCHEMATC
